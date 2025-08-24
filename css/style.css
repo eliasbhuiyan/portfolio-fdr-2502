@@ -1,47 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-h1,h2,h3,h4,h5,h6,ul,ol,p{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
 }
-
-:root{
-    --poppins:  "Poppins", sans-serif;
-    --sanse: "Work Sans", sans-serif;
-    --primary: #132238;
-    --secondary: #556070;
-    --brand: #A53DFF;
+ul,
+ol {
+  list-style: none;
 }
-body{
-    background: url("../images/homepage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+a {
+  display: inline-block;
+  text-decoration: none;
 }
-.primary_btn{
-   padding: 12px 24px;
-    font-weight: 500;
-    color: white;
-    font-family: var(--sanse);
-    background-color: var(--brand);
-    border: none;
-    border-radius: 4px;
+:root {
+  --poppins: "Poppins", sans-serif;
+  --sanse: "Work Sans", sans-serif;
+  --primary: #132238;
+  --secondary: #556070;
+  --brand: #a53dff;
 }
-
+body {
+  background: url("../images/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.primary_btn {
+  padding: 12px 24px;
+  font-weight: 500;
+  color: white;
+  font-family: var(--sanse);
+  background-color: var(--brand);
+  border: none;
+  border-radius: 4px;
+}
+.secondary_btn {
+  padding: 12px 24px;
+  font-weight: 500;
+  color: var(--brand);
+  font-family: var(--sanse);
+  border: 1px solid var(--brand);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.common_heading {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: var(--sanse);
+  color: var(--primary);
+  line-height: 50px;
+}
+.common_doc {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--sanse);
+  color: var(--secondary);
+  line-height: 24px;
+}
 /* ==============================
         Common Css End
 =============================== */
 /* ==============================
         Main-Menu Start
 =============================== */
-.main_menu{
-    padding: 20px 0;
-    background-color: white;
+.main_menu {
+  padding: 20px 0;
+  background-color: white;
 }
-.main_menu ul li a{
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--primary) !important;
-    font-family: var(--sanse);
-    padding: 12px 24px !important;
+.main_menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary) !important;
+  font-family: var(--sanse);
+  padding: 12px 24px !important;
 }
 /* ==============================
         Main-Menu End
@@ -49,63 +86,185 @@ body{
 /* ==============================
         Banner Start
 =============================== */
-#banner{
-    padding: 126px 0 222px;
+#banner {
+  padding: 126px 0 222px;
 }
-.banner_content{
-    margin-top: 52px;
+.banner_content {
+  margin-top: 52px;
 }
-.banner_content h1{
-    max-width: 578px;
-    font-size: 72px;
-    font-weight: 600;
-    color: var(--primary);
-    font-family: var(--sanse);
-    line-height: 84px;
+.banner_content h1 {
+  max-width: 578px;
+  font-size: 72px;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--sanse);
+  line-height: 84px;
 }
-.banner_content > p{
-    max-width: 648px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: var(--sanse);
-    color: var(--secondary);
-    padding: 24px 0;
+.banner_content > p {
+  max-width: 648px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--sanse);
+  color: var(--secondary);
+  padding: 24px 0;
 }
 
-.banner_content .experiences{
-    margin-top: 142px;
-    display: flex;
-    gap: 5px;
+.banner_content .experiences {
+  margin-top: 142px;
+  display: flex;
+  gap: 5px;
 }
-.banner_content .experiences .item{
-    width: 224px;
-    text-align: center;
-    background-color: rgba(237, 216, 255, 0.50);
-    padding: 17px 0;
+.banner_content .experiences .item {
+  width: 224px;
+  text-align: center;
+  background-color: rgba(237, 216, 255, 0.5);
+  padding: 17px 0;
 }
-.banner_content .experiences .item h3{
-    font-size: 32px;
-    font-weight: 600;
-    color: var(--primary);
-    font-family: var(--sanse);
+.banner_content .experiences .item h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--sanse);
 }
-.banner_content .experiences .item p{
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--secondary);
-    font-family: var(--sanse);
+.banner_content .experiences .item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary);
+  font-family: var(--sanse);
 }
-.banner_img{
-    border-radius: 25px;
-    overflow: hidden;
+.banner_img {
+  border-radius: 25px;
+  overflow: hidden;
 }
 /* ==============================
         Banner End
 =============================== */
 /* ==============================
+        About Start
+=============================== */
+#about{
+  transform: translateY(108px);
+}
+#about .row {
+  align-items: center;
+}
+.about_bg {
+  background-color: #fff;
+  padding: 112px 0 148px;
+  border-radius: 16px;
+  box-shadow: 0px 36px 105px 0px rgba(43, 56, 76, 0.10)
+}
+.about_image {
+  max-width: 424px;
+  margin: auto;
+  position: relative;
+}
+.about_social {
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
+}
+.about_social ul {
+        display: flex;
+}
+.about_social ul li a{
+        font-size: 24px;
+        color: var(--brand);
+        padding: 15px;
+        border-radius: 4px;
+        transition: all linear .3s;
+}
+.about_social ul li a:hover{
+        background-color: var(--brand);
+        color: #fff;
+}
+.about_btns {
+  display: flex;
+  gap: 16px;
+}
+.about_info .common_heading {
+  max-width: 520px;
+  font-size: 38px;
+}
+.about_info .common_doc {
+  max-width: 536px;
+  padding: 32px 0;
+}
+.about_info .common_doc span {
+  display: block;
+  margin-top: 16px;
+}
+/* ==============================
+        About End
+=============================== */
+/* ==============================
+        Work Process Start
+=============================== */
+#work_process{
+        padding: 248px 0 140px;
+        background-color: #F0F1F3;
+}
+#work_process .row{
+        align-items: center;
+}
+.work_heading .common_doc{
+        margin-top: 24px;
+        max-width: 529px;
+}
+
+.work_items{
+        background-color: #fff;
+        padding: 32px;
+        border-radius: 12px;
+        transition: all linear .3s;
+        cursor: pointer;
+}
+.work_items:hover{
+        box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.10);
+}
+.work_items .icon{
+        width: 72px;
+        height: 72px;
+        background-color: rgba(237, 216, 255, 0.50);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: var(--brand);
+        border-radius: 6px;
+        transition: all linear .3s;
+}
+.work_items:hover .icon{
+        background-color: var(--brand);
+        color: white;
+}
+.work_items h3{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--primary);
+        font-family: var(--sanse);
+        padding: 32px 0 12px;
+}
+.work_items p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--secondary);
+        font-family: var(--poppins)
+}
+.mt-24{
+        margin-top: 24px;
+}
+/* ==============================
+        Work Process End
+=============================== */
+/* ==============================
         Main-Menu Start
 =============================== */
-
 
 /* ==============================
         Main-Menu End
@@ -114,7 +273,6 @@ body{
         Main-Menu Start
 =============================== */
 
-
 /* ==============================
         Main-Menu End
 =============================== */
@@ -122,30 +280,12 @@ body{
         Main-Menu Start
 =============================== */
 
-
 /* ==============================
         Main-Menu End
 =============================== */
 /* ==============================
         Main-Menu Start
 =============================== */
-
-
-/* ==============================
-        Main-Menu End
-=============================== */
-/* ==============================
-        Main-Menu Start
-=============================== */
-
-
-/* ==============================
-        Main-Menu End
-=============================== */
-/* ==============================
-        Main-Menu Start
-=============================== */
-
 
 /* ==============================
         Main-Menu End
