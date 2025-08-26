@@ -42,7 +42,7 @@ body {
 }
 .secondary_btn {
   padding: 12px 24px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--brand);
   font-family: var(--sanse);
   border: 1px solid var(--brand);
@@ -142,7 +142,7 @@ body {
 /* ==============================
         About Start
 =============================== */
-#about{
+#about {
   transform: translateY(108px);
 }
 #about .row {
@@ -152,7 +152,7 @@ body {
   background-color: #fff;
   padding: 112px 0 148px;
   border-radius: 16px;
-  box-shadow: 0px 36px 105px 0px rgba(43, 56, 76, 0.10)
+  box-shadow: 0px 36px 105px 0px rgba(43, 56, 76, 0.1);
 }
 .about_image {
   max-width: 424px;
@@ -170,18 +170,18 @@ body {
   box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
 }
 .about_social ul {
-        display: flex;
+  display: flex;
 }
-.about_social ul li a{
-        font-size: 24px;
-        color: var(--brand);
-        padding: 15px;
-        border-radius: 4px;
-        transition: all linear .3s;
+.about_social ul li a {
+  font-size: 24px;
+  color: var(--brand);
+  padding: 15px;
+  border-radius: 4px;
+  transition: all linear 0.3s;
 }
-.about_social ul li a:hover{
-        background-color: var(--brand);
-        color: #fff;
+.about_social ul li a:hover {
+  background-color: var(--brand);
+  color: #fff;
 }
 .about_btns {
   display: flex;
@@ -205,76 +205,140 @@ body {
 /* ==============================
         Work Process Start
 =============================== */
-#work_process{
-        padding: 248px 0 140px;
-        background-color: #F0F1F3;
+#work_process {
+  padding: 248px 0 140px;
+  background-color: #f0f1f3;
 }
-#work_process .row{
-        align-items: center;
+#work_process .row {
+  align-items: center;
 }
-.work_heading .common_doc{
-        margin-top: 24px;
-        max-width: 529px;
+.work_heading .common_doc {
+  margin-top: 24px;
+  max-width: 529px;
 }
 
-.work_items{
-        background-color: #fff;
-        padding: 32px;
-        border-radius: 12px;
-        transition: all linear .3s;
-        cursor: pointer;
+.work_items {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  transition: all linear 0.3s;
+  cursor: pointer;
 }
-.work_items:hover{
-        box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.10);
+.work_items:hover {
+  box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.1);
 }
-.work_items .icon{
-        width: 72px;
-        height: 72px;
-        background-color: rgba(237, 216, 255, 0.50);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        color: var(--brand);
-        border-radius: 6px;
-        transition: all linear .3s;
+.work_items .icon {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(237, 216, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--brand);
+  border-radius: 6px;
+  transition: all linear 0.3s;
 }
-.work_items:hover .icon{
-        background-color: var(--brand);
-        color: white;
+.work_items:hover .icon {
+  background-color: var(--brand);
+  color: white;
 }
-.work_items h3{
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--primary);
-        font-family: var(--sanse);
-        padding: 32px 0 12px;
+.work_items h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--sanse);
+  padding: 32px 0 12px;
 }
-.work_items p{
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--secondary);
-        font-family: var(--poppins)
+.work_items p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary);
+  font-family: var(--poppins);
 }
-.mt-24{
-        margin-top: 24px;
+.mt-24 {
+  margin-top: 24px;
 }
 /* ==============================
         Work Process End
 =============================== */
 /* ==============================
-        Main-Menu Start
+        Portfolio Start
 =============================== */
-
+#portfolio {
+  padding: 100px 0;
+}
+.portfolio_heading {
+  text-align: center;
+}
+.portfolio_heading p {
+  max-width: 577px;
+  margin: 24px auto 70px;
+}
+#portfolio .row{
+        row-gap: 24px;
+}
+.port_iems {
+  border-radius: 8px;
+  border: 1px solid #e6e8eb;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.port_iems:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.port_iems .port_details {
+  padding: 32px;
+}
+.port_iems .port_details h4 {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--sanse);
+  color: var(--secondary);
+}
+.port_iems .port_details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--sanse);
+  color: var(--primary);
+  padding: 4px 0 12px;
+}
+.port_iems .port_details p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--sanse);
+  color: var(--secondary);
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+.portfolio_btn{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+}
 /* ==============================
-        Main-Menu End
+        Portfolio End
 =============================== */
 /* ==============================
-        Main-Menu Start
+        Discuss Start
 =============================== */
-
+#discuss{
+        background-color: #132238;
+        padding: 100px 0;
+}
+.discuss_main{
+        max-width: 619px;
+        margin: auto;
+        text-align: center;
+}
+.discuss_main h2{
+        color: #ffffff;
+}
+.discuss_main p{
+        margin: 32px 0;
+}
 /* ==============================
-        Main-Menu End
+        Discuss End
 =============================== */
 /* ==============================
         Main-Menu Start
